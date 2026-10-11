@@ -1,0 +1,167 @@
+{
+  "data_quality": {
+    "rows_in": 12830080,
+    "duplicates_removed": 0,
+    "rows_missing_keys_removed": 0,
+    "tokenized_nulls_filled": 0,
+    "is_recurring_nulls_filled": 0,
+    "non_positive_amounts_removed": 0,
+    "mcc_mismatches_fixed": 60851,
+    "mcc_mismatch_examples": {
+      "7012->7311": 60851
+    },
+    "unknown_merchants": 0,
+    "amount_p999_kzt": 2258720.235000003,
+    "rows_above_p999": 12831,
+    "midnight_only_timestamps": 1849,
+    "rows_out": 12830080,
+    "business_cards": 25000,
+    "consumer_cards": 80000
+  },
+  "feature_build_seconds": 33.7,
+  "naive_business_vs_consumer": {
+    "roc_auc": 0.999999844,
+    "pr_auc": 0.9999995017297335,
+    "precision": 0.999760009599616,
+    "recall": 0.9998,
+    "f1": 0.999780004399912,
+    "threshold": 0.5,
+    "tn": 79994,
+    "fp": 6,
+    "fn": 5,
+    "tp": 24995,
+    "consumers_flagged": 6
+  },
+  "kmeans_silhouette": {
+    "6": 0.1261,
+    "7": 0.1101,
+    "8": 0.0881,
+    "9": 0.1193,
+    "10": 0.122,
+    "11": 0.0931,
+    "12": 0.0993
+  },
+  "silver_labels": {
+    "positive": 9757,
+    "negative": 50912,
+    "ambiguous": 19331
+  },
+  "champion": {
+    "model": "hist_gradient_boosting",
+    "roc_auc": 1.0,
+    "pr_auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "threshold": 0.6121284926374042,
+    "tn": 10183,
+    "fp": 0,
+    "fn": 0,
+    "tp": 1951,
+    "best_params": {
+      "min_samples_leaf": 100,
+      "max_leaf_nodes": 31,
+      "max_iter": 400,
+      "learning_rate": 0.1,
+      "l2_regularization": 1.0
+    }
+  },
+  "mcc_blind_check": {
+    "roc_auc": 0.9994821571998196,
+    "pr_auc": 0.9993114788546302,
+    "precision": 0.9918492103922567,
+    "recall": 0.9979497693490518,
+    "f1": 0.9948901379662749,
+    "threshold": 0.5,
+    "tn": 10167,
+    "fp": 16,
+    "fn": 4,
+    "tp": 1947
+  },
+  "scoring_seconds_80k_cards": 0.265,
+  "business_card_recall": {
+    "business_cards": 25000,
+    "flagged_share": 0.99988,
+    "median_score": 0.9999989143949232
+  },
+  "spike_in": [
+    {
+      "fraction": 0.0,
+      "detection_rate": 0.0,
+      "median_score": 0.0,
+      "cards": 1000
+    },
+    {
+      "fraction": 0.05,
+      "detection_rate": 0.358,
+      "median_score": 0.0003,
+      "cards": 1000
+    },
+    {
+      "fraction": 0.1,
+      "detection_rate": 0.648,
+      "median_score": 0.9664,
+      "cards": 1000
+    },
+    {
+      "fraction": 0.2,
+      "detection_rate": 0.875,
+      "median_score": 0.9984,
+      "cards": 1000
+    },
+    {
+      "fraction": 0.3,
+      "detection_rate": 0.959,
+      "median_score": 0.9999,
+      "cards": 1000
+    },
+    {
+      "fraction": 0.5,
+      "detection_rate": 0.996,
+      "median_score": 0.9999,
+      "cards": 1000
+    }
+  ],
+  "temporal_stability": {
+    "cards_in_both_halves": 80000,
+    "spearman_rank_corr": 0.6319971718185791,
+    "top_n": 14440,
+    "top_n_overlap": 0.8544321329639889,
+    "flag_agreement": 0.9357625,
+    "flagged_h1": 15102,
+    "flagged_h2": 15461,
+    "flagged_in_both": 12712
+  },
+  "business_case": {
+    "consumers_scored": 80000,
+    "flagged": 14440,
+    "flagged_share": 0.1805,
+    "flagged_from_ambiguous_zone": 4683,
+    "tiers": {
+      "1-confirmed": 9757,
+      "2-likely": 3199,
+      "3-watchlist": 1484
+    },
+    "annual_commercial_spend_by_tier_kzt": {
+      "1-confirmed": 199031495490.0,
+      "2-likely": 32459838804.0,
+      "3-watchlist": 3647237068.0
+    },
+    "by_persona": {
+      "Online seller / digital marketer (mixed with personal spend)": 3808,
+      "Reseller buying stock at retail (mixed with personal spend)": 3413,
+      "Wholesale trader (mixed with personal spend)": 2187,
+      "Everyday consumer A": 1513,
+      "Online seller / digital marketer (dedicated card)": 976,
+      "Everyday consumer B": 960,
+      "Reseller buying stock at retail (dedicated card)": 891,
+      "Delivery & logistics trader (mixed with personal spend)": 442,
+      "Traveller / affluent": 250
+    },
+    "annual_commercial_spend_confirmed_likely_kzt": 231491334294.0,
+    "assumed_conversion": 0.15,
+    "assumed_fee_uplift": 0.01,
+    "illustrative_annual_uplift_kzt": 347237001.441
+  },
+  "runtime_seconds": 503.8
+}

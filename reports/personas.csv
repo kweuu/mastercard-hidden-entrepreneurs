@@ -1,0 +1,11 @@
+label,cards,is_commercial,commercial_spend_share,median_ticket_kzt,business_hours_share,n_merchants
+Everyday consumer A,27297,False,0.06465742992369308,6030.0,0.3357142857142857,45.0
+Everyday consumer B,16749,False,0.060518078988529865,10350.5,0.3333333333333333,34.0
+Everyday consumer C,12683,False,0.0,7288.5,0.3333333333333333,32.0
+Traveller / affluent,11493,False,0.04492957265452921,44232.0,0.3446601941747573,49.0
+Online seller / digital marketer (mixed with personal spend),3812,True,0.7996379610298281,27730.5,0.30578512396694213,15.0
+Reseller buying stock at retail (mixed with personal spend),3426,True,0.5490146814870921,29905.0,0.3389830508474576,15.0
+Wholesale trader (mixed with personal spend),2187,True,0.8204513595609241,45231.0,0.35294117647058826,14.0
+Online seller / digital marketer (dedicated card),976,True,0.9958158003222439,173147.5,0.5662650602409639,7.0
+Reseller buying stock at retail (dedicated card),891,True,0.9765845837465241,106349.0,0.7142857142857143,6.0
+Delivery & logistics trader (mixed with personal spend),486,True,0.6578501085732523,28496.5,0.3359375,15.0

@@ -1,0 +1,5 @@
+model,cv_pr_auc,cv_pr_auc_std,best_params,val_spike_sensitivity,test_roc_auc,test_pr_auc,test_precision,test_recall,test_f1,test_threshold,test_tn,test_fp,test_fn,test_tp
+logistic_regression,1.0,9.930136612989092e-17,{'logisticregression__C': 0.1},0.39125,1.0,1.0,1.0,1.0,1.0,0.7767978309166592,10183,0,0,1951
+random_forest,1.0,0.0,"{'n_estimators': 300, 'min_samples_leaf': 5, 'max_features': 'sqrt', 'max_depth': 16}",0.380625,1.0,1.0,1.0,1.0,1.0,0.5399373846841551,10183,0,0,1951
+hist_gradient_boosting,1.0,0.0,"{'min_samples_leaf': 100, 'max_leaf_nodes': 31, 'max_iter': 400, 'learning_rate': 0.1, 'l2_regularization': 1.0}",0.719375,1.0,1.0,1.0,1.0,1.0,0.6121284926374042,10183,0,0,1951
+rule: commercial share >= 25%,,,,,1.0,1.0,1.0,1.0,1.0,0.25,10183,0,0,1951
